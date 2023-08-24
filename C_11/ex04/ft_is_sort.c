@@ -6,7 +6,7 @@
 /*   By: myevou <myevou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:13:35 by myevou            #+#    #+#             */
-/*   Updated: 2023/08/23 11:44:29 by myevou           ###   ########.fr       */
+/*   Updated: 2023/08/24 15:59:53 by myevou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_is_sort(int *tab, int length, int (*f)(int, int))
 	i = 0;
 	while (i++ < length - 1)
 	{
-		if ((*f)(tab[i], tab[i + 1]) < 0)
+		if ((*f)(tab[i], tab[i + 1]) > 0)
 			return (0);
 	}
 	return (1);
