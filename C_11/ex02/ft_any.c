@@ -6,7 +6,7 @@
 /*   By: myevou <myevou@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/21 21:14:25 by myevou            #+#    #+#             */
-/*   Updated: 2023/08/22 14:26:29 by myevou           ###   ########.fr       */
+/*   Updated: 2023/08/24 16:08:23 by myevou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_any(char **tab, int (*f)(char *))
 	while (tab[i++])
 	{
 		if ((*f)((*tab)[i]))
-			return (0);
+			return (1);
 	}
-	return (1);
+	return (0);
 }
